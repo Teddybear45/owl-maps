@@ -1,0 +1,112 @@
+:root {
+    --footers-background-color: #e2bf74;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+}
+
+/* break TEST break */
+.breaks {
+    padding-top: 1200px;
+}
+
+body {
+    font-family: "Inter", Arial, "Noto Sans" Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgb(230, 230, 230);
+    columns: black;
+}
+
+
+
+
+/* Start Footer */
+
+.footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background-color: var(--footers-background-color);
+    position: relative;
+}
+
+.inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+    font-family: "Inter", "Noto Sans";
+}
+
+.inner-footer .logo-container {
+    width: 35%;
+    float: left;
+    height: inherit;
+    display: bl;
+    font-family: inherit;
+    font-size: 35px;
+    color: white;
+    padding-left: 40px;
+}
+
+.inner-footer .logo-container img {
+    width: 35px;
+    height: inherit;
+}
+
+.inner-footer .logo-container .n-p-org {
+    font-family: "Noto Sans", "Inter";
+    font-size: 18px;
+    text-align: left;
+    height: auto;
+}
+
+.inner-footer .footer-third {
+    width: calc(21% - 40px);
+    margin-left: 20px;
+    float: left;
+    height: 100%;
+}
+
+.inner-footer .footer-third:last-child {
+    margin-right: 0;
+}
+
+.inner-footer .footer-third h3 {
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner-footer .footer-third a {
+    font-family: inherit;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.footer-bottom {
+    width: 100vw;
+    background-color: var(--footers-background-color);
+    text-align: center;
+    padding-bottom: 5px;
+    position: absolute;
+}
+
+.footer-bottom a {
+    color: white;
+    font-size: 12px;
+}

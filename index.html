@@ -2,39 +2,27 @@
 <html>
 
 <head>
-    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Owl Maps</title>
 
-    <!-- Mapbox src -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <!-- Mapbox css link-->
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-
-    <!-- CSS stylesheets ref-->
+    <!-- css link-->
     <link rel="stylesheet" href="CSS/Style.css">
 
-    <!--External Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
-
+    <!-- external fonts -->
 
 </head>
 
 
 <body>
-    <div id="map"></div>
-    
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhcno0bHlmIiwiYSI6ImNrZWNhMGFrZjAyNjMyenA5NzI5emp6c3QifQ.TAZD8AYKlTOX0JPvaXTROg';
-        var map = new mapboxgl.Map({
-            container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v11', // style URL
-            center: [100, 40], // starting position [lng, lat]
-            zoom: 9 // starting zoom
-        });
-    </script>
+
+    <div id='map'></div>
+    <br>
+    <button id="fit">Fit to Kenya</button>
+
+
 
 
 
@@ -42,10 +30,8 @@
 
 
 </body>
-
-
-
-
-
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<script src="main.js"></script>
 
 </html>

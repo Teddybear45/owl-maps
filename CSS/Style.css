@@ -1,6 +1,7 @@
 :root {
     --footers-background-color: #e2bf74;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
 }
 
 /* break TEST break */
+
 .breaks {
     padding-top: 1200px;
 }
@@ -20,7 +22,6 @@ body {
     box-sizing: border-box;
     font-size: 16px;
     background-color: rgb(230, 230, 230);
-    columns: black;
 }
 
 #map {
@@ -28,10 +29,23 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
+    padding-top: 200px;
 }
 
-
-
+#fit {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ee8a65;
+}
 
 /* Start Footer */
 

@@ -2,39 +2,29 @@
 <html>
 
 <head>
-    <title>maps</title>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    
-    <script type='text/javascript'src='https://www.bing.com/api/maps/mapcontrol?key=AiDM_U1l_FutDrcD56OJsZGAQg54Zenohbklsd7DxhiM0WkX9dwS-I_ME9hBNYSw&callback=loadMapScenario' async defer></script>
-    
-    
-    
-        <link rel="stylesheet" href="style.css">
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!-- Reference to the Bing Maps SDK -->
+    <script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AiDM_U1l_FutDrcD56OJsZGAQg54Zenohbklsd7DxhiM0WkX9dwS-I_ME9hBNYSw'
+        async defer></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS to Maps -->
+    <script src="./main.js"></script>
 
 </head>
 
 <body>
-    <div id='printoutPanel'></div>
+    <div id="main-map"></div>
 
-    <div id='myMap'></div>
-
-    <script type='text/javascript'>
-        function loadMapScenario() {
-            var navigationBarMode = Microsoft.Maps.NavigationBarMode;
-            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
-                /* No need to set credentials if already passed in URL */
-                navigationBarMode: navigationBarMode.compact,
-                supportedMapTypes: [Microsoft.Maps.MapTypeId.road, Microsoft.Maps.MapTypeId.aerial, Microsoft.Maps.MapTypeId.grayscale, Microsoft.Maps.MapTypeId.canvasLight],
-
-            });
-            map.setView({
-                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-                zoom: 9
-            });
-            
-
-        }
-    </script>
+    <div class="directionsContainer">
+        <div id="directionsPanel"></div>
+        <div id="directionsItinerary"></div>
+    </div>
 
 </body>
 
